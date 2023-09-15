@@ -1,10 +1,10 @@
-#include "OledDriver.h"
+#include "OLEDDriver.h"
 
-OledDriver::OledDriver() 
+OLEDDriver::OLEDDriver() 
 {
 
 }
-void OledDriver::run() 
+void OLEDDriver::run() 
 {
 
 }

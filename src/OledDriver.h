@@ -1,13 +1,13 @@
 #ifndef OLEDDRIVER_H
 #define OLEDDRIVER_H
 
-class OledDriver 
+class OLEDDriver 
 {
 
 private:
 
 public:
-    OledDriver();
+    OLEDDriver();
     void run();
 };
 
