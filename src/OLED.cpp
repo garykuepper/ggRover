@@ -1,6 +1,6 @@
 #include "OLED.h"
 
-OLED::OLED(int resetPin) : display(128, 32, &Wire, resetPin) {}
+OLED::OLED(int resetPin) : display(128, 32, &Wire, -1) {}
 
 void OLED::init() {
     if(!display.begin(SSD1306_I2C_ADDRESS, OLED_RESET)) {

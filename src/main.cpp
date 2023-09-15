@@ -20,7 +20,7 @@ void loop() {
   //rover.run();
   ledDriver.run();
   ledDriver.printStatusChange();
-  ledDriver.printElapsedTime();
+  
 
 }
 
