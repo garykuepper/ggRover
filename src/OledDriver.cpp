@@ -4,3 +4,7 @@ OledDriver::OledDriver()
 {
 
 }
+void OledDriver::run() 
+{
+
+}

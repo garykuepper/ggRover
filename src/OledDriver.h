@@ -8,7 +8,7 @@ private:
 
 public:
     OledDriver();
-
+    void run();
 };
 
 #endif
