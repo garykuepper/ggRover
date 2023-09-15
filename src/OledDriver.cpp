@@ -1,10 +1,15 @@
 #include "OLEDDriver.h"
+#include <Arduino.h>
 
-OLEDDriver::OLEDDriver() 
-{
-
+void OLEDDriver::initialize() {
+    oledDisplay.begin();
 }
-void OLEDDriver::run() 
-{
 
+void OLEDDriver::run() {
+    displayTimeSinceStart();
+}
+
+void OLEDDriver::displayTimeSinceStart() {
+    unsigned long elapsedTime = millis();
+    oledDisplay.displayTime(elapsedTime);
 }
