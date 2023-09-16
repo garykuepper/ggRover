@@ -13,7 +13,7 @@ public:
 private:
     DS4_I2C_CONTROL ds4;
     unsigned long lastUpdate; 
-    const int read_interval = 500; // interval in milliseconds
+    const uint16_t read_interval = 500; // interval in milliseconds
 
     bool isTimeToUpdate(unsigned long currentMillis) const;
     void showStatus();
