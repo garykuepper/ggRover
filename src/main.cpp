@@ -9,23 +9,26 @@ PS4Monitor ps4;
 Display display;
 SimpleTimer timer;
 
-void updateDisplay(){
+void updateDisplay()
+{
     display.clear();
-    display.writeX(0,0,ps4.getLX());
-    display.writeX(0,10,ps4.getLY());
+    display.writeX(0, 0, ps4.getLX());
+    display.writeX(0, 10, ps4.getLY());
     display.showTimeSinceStart();
     display.update();
 }
 
-void setup() {
-    //while (!Serial);
-    //Serial.begin(baudRate);
+void setup()
+{
+    // while (!Serial);
+    // Serial.begin(baudRate);
     ps4.begin();
     display.init();
     int displayTimer = timer.setInterval(dispRefresh, updateDisplay);
 }
 
-void loop() {
+void loop()
+{
     timer.run();
-    ps4.update();    
+    ps4.update();
 }

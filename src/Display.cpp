@@ -54,17 +54,6 @@ void Display::animate()
     updateSnowflakes();
 }
 
-bool Display::isSecondPassed()
-{
-    uint32_t currentMillis = millis();
-    if (currentMillis - lastTimeUpdate >= 500)
-    {
-        lastTimeUpdate = currentMillis;
-        return true;
-    }
-    return false;
-}
-
 void Display::getElapsedTime(uint32_t &hours, uint32_t &minutes, uint32_t &seconds)
 {
     uint32_t totalMillis = millis();
