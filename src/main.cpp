@@ -26,8 +26,8 @@ void updateDisplay()
 {
     display.clear();
     display.showTimeSinceStart();
-    String xJoy = "L_X: " + padWithSpaces(ps4.getLX()) + " R_X: " + padWithSpaces(ps4.getRX());
-    String yJoy = "L_Y: " + padWithSpaces(ps4.getLY()) + " R_Y: " + padWithSpaces(ps4.getRY());
+    String xJoy = "L_X:" + padWithSpaces(ps4.getLX(),4) + " R_X:" + padWithSpaces(ps4.getRX(),4);
+    String yJoy = "L_Y:" + padWithSpaces(ps4.getLY(),4) + " R_Y:" + padWithSpaces(ps4.getRY(),4);
     display.writeText(0,0,xJoy);
     display.writeText(0,10,yJoy);
     display.update();
@@ -53,7 +53,7 @@ void setup()
 
 void loop()
 {
-    timer.run();
+    timer.run();  // runs display and blink
     ps4.update();
     light.update();
 }
