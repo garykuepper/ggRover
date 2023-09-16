@@ -77,10 +77,10 @@ void Display::getElapsedTime(uint32_t &hours, uint32_t &minutes, uint32_t &secon
 
 void Display::renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds)
 {
-    oledDisplay.clearDisplay();
+    // oledDisplay.clearDisplay();
     oledDisplay.setTextSize(1);
     oledDisplay.setTextColor(WHITE);
-    oledDisplay.setCursor(0, 0);
+    oledDisplay.setCursor(0, 20);
     oledDisplay.print("Uptime: ");
     if (hours < 10)
         oledDisplay.print('0');
@@ -93,17 +93,14 @@ void Display::renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds)
     if (seconds < 10)
         oledDisplay.print('0');
     oledDisplay.println(seconds);
-    oledDisplay.display();
+    // oledDisplay.display();
 }
 
 void Display::showTimeSinceStart()
 {
-    if (isSecondPassed())
-    {
-        uint32_t hours, minutes, seconds;
-        getElapsedTime(hours, minutes, seconds);
-        renderTime(hours, minutes, seconds);
-    }
+    uint32_t hours, minutes, seconds;
+    getElapsedTime(hours, minutes, seconds);
+    renderTime(hours, minutes, seconds);
 }
 
 void Display::updateSnowflakes()
@@ -125,34 +122,29 @@ void Display::clear()
     oledDisplay.clearDisplay();
 }
 
+void Display::update()
+{
+    oledDisplay.display();
+}
+
 void Display::writeText(int x, int y, const char *text)
 {
-    oledDisplay.clearDisplay();
+    // oledDisplay.clearDisplay();
     oledDisplay.setTextSize(1);
     oledDisplay.setTextColor(WHITE);
     oledDisplay.setCursor(x, y);
     oledDisplay.print(text);
-    oledDisplay.display();
+    // oledDisplay.display();
 }
 
-void Display::writeX(int x, int y, int value, uint32_t interval)
+void Display::writeX(int x, int y, int value)
 {
-    uint32_t currentMillis = millis();
-    if (currentMillis - lastXUpdateTime >= interval) {
-        lastXUpdateTime = currentMillis;
 
-        oledDisplay.clearDisplay();
-        oledDisplay.setCursor(x, y);
-        oledDisplay.setTextSize(1);
-        oledDisplay.setTextColor(WHITE);
-        String output = "X: " + String(value);
-        oledDisplay.print(output.c_str());
-        oledDisplay.display();
-    }
-}
-
-
-void Display::update()
-{
-    oledDisplay.display();
+    // oledDisplay.clearDisplay();
+    oledDisplay.setCursor(x, y);
+    oledDisplay.setTextSize(1);
+    oledDisplay.setTextColor(WHITE);
+    String output = "X: " + String(value);
+    oledDisplay.print(output.c_str());
+    // oledDisplay.display();
 }

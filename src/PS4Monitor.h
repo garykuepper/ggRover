@@ -9,15 +9,13 @@ public:
     PS4Monitor(uint8_t address = 0x29); // Default address set to 0x29
     void begin();
     void update();
-    int getX();
+    int getLX();
+    int getLY();
+    void showStatus();
 
 private:
-    DS4_I2C_CONTROL ds4;
-    unsigned long lastUpdate; 
-    const uint16_t read_interval = 500; // interval in milliseconds
+    DS4_I2C_CONTROL ds4;       
 
-    bool isTimeToUpdate(unsigned long currentMillis) const;
-    void showStatus();
 };
 
 #endif // PS4Monitor_h
