@@ -1,11 +1,11 @@
 #include <Arduino.h>
-//#include "RoverRun.h"
-#include "BlinkDriver.h"
+#include "Display.h"
+#include "Blink.h"
+#include "Light.h"
 
-//RoverRun rover;
-//OledDriver oled;
-BlinkDriver ledDriver(PC13);
-OLEDDriver oledDriver;
+Display display;
+Blink onboardLED(PC13);
+Light led(PA8);
 
 void setup() {
   Serial.begin(9600);
