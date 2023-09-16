@@ -20,10 +20,12 @@ public:
     void clear();
     void writeText(int x, int y, const char* text);
     void update();
+    void writeX(int x, int y, int value, uint32_t interval);
 
 private:
     Adafruit_SSD1306 oledDisplay;
     uint32_t lastTimeUpdate;
+    uint32_t lastXUpdateTime;
     float icons[NUMFLAKES][3];
 
     bool isSecondPassed();

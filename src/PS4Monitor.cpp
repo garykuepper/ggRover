@@ -29,3 +29,7 @@ void PS4Monitor::showStatus() {
     Serial.println((String)"PS4 R1 button is: " + ds4.button_r1);
     Serial.println((String)"PS4 R2 button is: " + ds4.button_r2);
 }
+
+int PS4Monitor::getX() {
+    return ds4.l_joystick_x;
+}

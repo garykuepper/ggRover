@@ -9,6 +9,7 @@ public:
     PS4Monitor(uint8_t address = 0x29); // Default address set to 0x29
     void begin();
     void update();
+    int getX();
 
 private:
     DS4_I2C_CONTROL ds4;
