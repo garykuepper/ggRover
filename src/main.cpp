@@ -1,13 +1,13 @@
 #include <Arduino.h>
-#include "OLEDDriver.h"
+#include "Display.h"
 
-
-OLEDDriver oledDriver;
+Display display;
 
 void setup() {
-    oledDriver.initialize();
+    display.init();
 }
 
 void loop() {
-    oledDriver.run();
+   // display.animate();
+    display.showTimeSinceStart();
 }

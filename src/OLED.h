@@ -1,7 +1,7 @@
 #ifndef OLED_H
 #define OLED_H
 
-#define SSD1306_I2C_ADDRESS 0x3D
+#define SSD1306_I2C_ADDRESS 0x3C
 #define OLED_RESET -1 
 
 #include <Wire.h>
