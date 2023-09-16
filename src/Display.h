@@ -15,6 +15,11 @@ public:
     void init();
     void animate();
     void showTimeSinceStart();
+    
+    // New methods
+    void clear();
+    void writeText(int x, int y, const char* text);
+    void update();
 
 private:
     Adafruit_SSD1306 oledDisplay;

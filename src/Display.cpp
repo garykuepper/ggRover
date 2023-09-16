@@ -103,3 +103,16 @@ void Display::updateSnowflakes() {
         }
     }
 }
+
+void Display::clear() {
+    oledDisplay.clearDisplay();
+}
+
+void Display::writeText(int x, int y, const char* text) {
+    oledDisplay.setCursor(x, y);
+    oledDisplay.print(text);
+}
+
+void Display::update() {
+    oledDisplay.display();
+}
