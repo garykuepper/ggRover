@@ -13,18 +13,31 @@ Display display;
 SimpleTimer timer;
 Light light(PA8);
 Blink blink(PC13);
+
+String padWithSpaces(int value, int totalChars){
+    String result = String(value);
+    while (result.length() < totalChars) {
+        result = " " + result;
+    }
+    return result;
+}
+
 void updateDisplay()
 {
     display.clear();
-    display.writeX(0, 0, ps4.getLX());
-    display.writeX(0, 10, ps4.getLY());
     display.showTimeSinceStart();
+    String xJoy = "L_X: " + padWithSpaces(ps4.getLX()) + " R_X: " + padWithSpaces(ps4.getRX());
+    String yJoy = "L_Y: " + padWithSpaces(ps4.getLY()) + " R_Y: " + padWithSpaces(ps4.getRY());
+    display.writeText(0,0,xJoy);
+    display.writeText(0,10,yJoy);
     display.update();
 }
+
 void blinkToggle()
 {
     blink.toggle();
 }
+
 void setup()
 {
     // while (!Serial);

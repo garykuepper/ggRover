@@ -9,8 +9,10 @@ public:
     PS4Monitor(uint8_t address = 0x29); // Default address set to 0x29
     void begin();
     void update();
-    int getLX();
-    int getLY();
+    uint8_t getLX();
+    uint8_t getLY();
+    uint8_t getRX();
+    uint8_t getRY();
     void showStatus();
 
 private:

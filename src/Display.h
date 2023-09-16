@@ -19,7 +19,7 @@ public:
 
     // New methods
     void clear();
-    void writeText(int x, int y, const char *text);
+    void writeText(int x, int y, const String &text);
     void update();
     void writeX(int x, int y, int value);
 
@@ -32,6 +32,8 @@ private:
     void getElapsedTime(uint32_t &hours, uint32_t &minutes, uint32_t &seconds);
     void renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds);
     void updateSnowflakes();
+    String padWithZero(uint32_t value);
+    String padWithSpace(uint32_t value);
 };
 
 #endif

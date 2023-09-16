@@ -64,27 +64,29 @@ void Display::getElapsedTime(uint32_t &hours, uint32_t &minutes, uint32_t &secon
     seconds = remainingSeconds % 60;
 }
 
-void Display::renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds)
-{
-    // oledDisplay.clearDisplay();
+void Display::renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds) {
     oledDisplay.setTextSize(1);
     oledDisplay.setTextColor(WHITE);
-    oledDisplay.setCursor(0, 20);
-    oledDisplay.print("Uptime: ");
-    if (hours < 10)
-        oledDisplay.print('0');
-    oledDisplay.print(hours);
-    oledDisplay.print(':');
-    if (minutes < 10)
-        oledDisplay.print('0');
-    oledDisplay.print(minutes);
-    oledDisplay.print(':');
-    if (seconds < 10)
-        oledDisplay.print('0');
-    oledDisplay.println(seconds);
-    // oledDisplay.display();
+    oledDisplay.setCursor(0, 20);    
+    String timeStr = "Uptime: " + padWithZero(hours) + ":" + padWithZero(minutes) + ":" + padWithZero(seconds);
+    oledDisplay.print(timeStr);
 }
 
+String Display::padWithZero(uint32_t value) {
+    if (value < 10) {
+        return "0" + String(value);
+    }
+    return String(value);
+}
+String Display::padWithSpace(uint32_t value) {
+    if (value < 100) {
+        if (value <10) {
+            return "  " + String(value);
+        }
+        return " " + String(value);
+    }    
+    return String(value);
+}
 void Display::showTimeSinceStart()
 {
     uint32_t hours, minutes, seconds;
@@ -116,24 +118,23 @@ void Display::update()
     oledDisplay.display();
 }
 
-void Display::writeText(int x, int y, const char *text)
+void Display::writeText(int x, int y, const String &text)
 {
-    // oledDisplay.clearDisplay();
-    oledDisplay.setTextSize(1);
-    oledDisplay.setTextColor(WHITE);
+ 
     oledDisplay.setCursor(x, y);
+    oledDisplay.setTextSize(1);
+    oledDisplay.setTextColor(WHITE);    
     oledDisplay.print(text);
-    // oledDisplay.display();
+ 
 }
 
 void Display::writeX(int x, int y, int value)
 {
 
-    // oledDisplay.clearDisplay();
     oledDisplay.setCursor(x, y);
     oledDisplay.setTextSize(1);
     oledDisplay.setTextColor(WHITE);
     String output = "X: " + String(value);
     oledDisplay.print(output.c_str());
-    // oledDisplay.display();
+  
 }
