@@ -1,35 +1,40 @@
 #include <Arduino.h>
-#include "Display.h"
-#include "Blink.h"
-#include "Light.h"
-#include "DS4_I2C_CONTROL.h"
-#include "PS4Monitor.h"
+#include <DS4_I2C_CONTROL.h>
+#define DEBUG false
 
-Display display;
-Blink onboardLED(PC13);
-Light led(PA8);
+unsigned long timer;
+uint32_t baudRate = 115200;
+uint8_t read_interval = 20;
+DS4_I2C_CONTROL ds4 = DS4_I2C_CONTROL(0x29);
 
-PS4Monitor ps4Monitor(0x29, display);
+void showStatus()
+{
+  Serial.println((String)"PS4 left joystick value is x: " + ds4.l_joystick_x + " y: " + ds4.l_joystick_y);
+  Serial.println((String)"PS4 right joystick value is x: " + ds4.r_joystick_x + " y: " + ds4.r_joystick_y);
+  Serial.println((String)"PS4 R1 button is:  " + ds4.button_r1);
+  Serial.println((String)"PS4 R2 button is:  " + ds4.button_r2);  
+}
 
-const int baudRate = 115200;
-
-
-void setup() {
+void setup()  {
+  while( !Serial ); // sometimes necessary with Teensy 3 or Arduino Micro
   Serial.begin(baudRate);
-  
-  display.init();
-  onboardLED.init();
-  led.init();
-  ps4Monitor.begin();
-
+  timer = 0;
+  ds4.begin();
 }
 
-void loop() {
-   // display.animate();
-  display.showTimeSinceStart();
-  onboardLED.update();
-  led.update();
+void loop()  {
 
-  //ps4Monitor.update();
-  
+  if (millis() > timer)
+  {
+    timer = millis() + read_interval;
+    ds4.get_ps4();
+    if (DEBUG) {
+       Serial.println((String)"ps4_ok = " + ds4.ps4_ok);
+    }   
+    if (ds4.ps4_ok)
+    {
+      showStatus();
+    }
+  }
 }
+
