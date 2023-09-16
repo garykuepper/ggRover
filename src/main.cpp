@@ -12,6 +12,7 @@
 Adafruit_SSD1306 oledDisplay(OLED_WIDTH, OLED_HEIGHT, &Wire);
 
 Display display(oledDisplay);
+
 void setup() {
     pinMode(PC13, OUTPUT);
     Serial.begin(9600);
@@ -31,5 +32,6 @@ void setup() {
 }
 
 void loop() {
-    display.animate();
+    //display.animate();
+    display.showTimeSinceStart();
 }

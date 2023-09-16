@@ -14,12 +14,18 @@ public:
 
     void init();
     void animate();  // Main method to animate the display
+    void showTimeSinceStart();
 
 private:
     Adafruit_SSD1306& oledDisplay;
     uint32_t prevLED;
     bool prevLEDStatus;
     float icons[NUMFLAKES][3];
+
+    uint32_t lastTimeUpdate;  // Timestamp for the last time update
+    bool isSecondPassed();  // Check if a second has passed since the last update
+    void getElapsedTime(uint32_t& hours, uint32_t& minutes, uint32_t& seconds); // Compute the elapsed time
+    void renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds); // Display the time on the OLED
 
     static const unsigned char PROGMEM logo_bmp[];  // Logo bitmap
 

@@ -24,6 +24,8 @@ Display::Display(Adafruit_SSD1306& displayRef)
   : oledDisplay(displayRef), prevLED(0), prevLEDStatus(false) {}
 
 void Display::init() {
+    lastTimeUpdate = 0;
+
     for(int f=0; f< NUMFLAKES; f++) {
         icons[f][0]   = random(1 - LOGO_WIDTH, oledDisplay.width());
         icons[f][1]   = -LOGO_HEIGHT;
@@ -79,5 +81,58 @@ void Display::updateSnowflakePositions() {
             icons[f][1]   = -LOGO_HEIGHT;
             icons[f][2]   = random(100, 600)/50.0;
         }
+    }
+}
+
+bool Display::isSecondPassed() {
+    uint32_t currentMillis = millis();
+    
+    if (currentMillis - lastTimeUpdate >= 1000) {
+        lastTimeUpdate = currentMillis;
+        return true;
+    }
+    return false;
+}
+
+void Display::getElapsedTime(uint32_t& hours, uint32_t& minutes, uint32_t& seconds) {
+    uint32_t totalMillis = millis();
+    uint32_t totalSeconds = totalMillis / 1000;
+    
+    hours = totalSeconds / 3600;
+    uint32_t remainingSeconds = totalSeconds % 3600;
+    minutes = remainingSeconds / 60;
+    seconds = remainingSeconds % 60;
+}
+
+void Display::renderTime(uint32_t hours, uint32_t minutes, uint32_t seconds) {
+    // Clear display
+    oledDisplay.clearDisplay();
+    
+    oledDisplay.setTextSize(1);
+    oledDisplay.setTextColor(WHITE);
+
+    // Set the cursor to the starting position
+    oledDisplay.setCursor(0, 0);
+
+    // Display the time
+    oledDisplay.print("Uptime: ");
+    if(hours < 10) oledDisplay.print('0');
+    oledDisplay.print(hours);
+    oledDisplay.print(':');
+    if(minutes < 10) oledDisplay.print('0');
+    oledDisplay.print(minutes);
+    oledDisplay.print(':');
+    if(seconds < 10) oledDisplay.print('0');
+    oledDisplay.println(seconds);
+
+    // Push the data to the OLED
+    oledDisplay.display();
+}
+
+void Display::showTimeSinceStart() {
+    if (isSecondPassed()) {
+        uint32_t hours, minutes, seconds;
+        getElapsedTime(hours, minutes, seconds);
+        renderTime(hours, minutes, seconds);
     }
 }
