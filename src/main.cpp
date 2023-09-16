@@ -8,6 +8,6 @@ void setup() {
 }
 
 void loop() {
-    display.animate();
+   // display.animate();
     display.showTimeSinceStart();
 }
