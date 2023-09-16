@@ -1,31 +1,18 @@
-// Blink.cpp
 #include "Blink.h"
+#include <Arduino.h>
 
-Blink::Blink(uint8_t _pin, uint32_t _interval)
-  : pin(_pin), interval(_interval), lastToggleTime(0), ledState(LOW) {
+Blink::Blink(int pin) : pin(pin), lastBlinkTime(0), ledStatus(false) {}
+
+void Blink::init() {
     pinMode(pin, OUTPUT);
-}
-
-void Blink::toggle() {
-    ledState = !ledState;
-    digitalWrite(pin, ledState);
-    lastToggleTime = millis();
+    digitalWrite(pin, LOW);
 }
 
 void Blink::update() {
-    if (millis() - lastToggleTime >= interval) {
-        toggle();
+    uint32_t currentMillis = millis();
+    if (currentMillis - lastBlinkTime >= 1000) {
+        ledStatus = !ledStatus;
+        digitalWrite(pin, ledStatus ? HIGH : LOW);
+        lastBlinkTime = currentMillis;
     }
 }
-
-
-
-String Blink::getStatus() const 
-{
-    if (ledState == HIGH) {
-        return "LED ON";
-    } else {
-        return "LED OFF";
-    }
-}
-

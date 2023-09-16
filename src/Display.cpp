@@ -28,7 +28,7 @@ Display::Display() : oledDisplay(OLED_WIDTH, OLED_HEIGHT, &Wire) {}
 
 void Display::init() {
     pinMode(PC13, OUTPUT);
-    Serial.begin(9600);
+    //Serial.begin(9600);
 
     if(!oledDisplay.begin(SSD1306_SWITCHCAPVCC, OLED_I2C_ADDR)) {
         Serial.println(F("SSD1306 allocation failed"));
