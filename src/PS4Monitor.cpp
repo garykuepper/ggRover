@@ -1,26 +1,31 @@
+// PS4Monitor.cpp
 #include "PS4Monitor.h"
 
-PS4Monitor::PS4Monitor(uint8_t i2cAddr, Display& disp) : ds4(i2cAddr), display(disp) {}
+PS4Monitor::PS4Monitor(uint8_t address) : ds4(address), lastUpdate(0) {}
 
 void PS4Monitor::begin() {
     ds4.begin();
+    
 }
 
 void PS4Monitor::update() {
-    ds4.get_ps4();
-    if (ds4.ps4_ok) {
-        displayPS4Status();
+    unsigned long currentMillis = millis();
+    if (isTimeToUpdate(currentMillis)) {
+        lastUpdate = currentMillis;
+        ds4.get_ps4();
+        if (ds4.ps4_ok) {
+            showStatus();
+        }
     }
 }
 
-void PS4Monitor::displayPS4Status() {
-    display.clear();
+bool PS4Monitor::isTimeToUpdate(unsigned long currentMillis) const {
+    return (currentMillis - lastUpdate) >= read_interval;
+}
 
-    String leftStick = "LX: " + String(ds4.l_joystick_x) + " LY: " + String(ds4.l_joystick_y);
-    String rightStick = "RX: " + String(ds4.r_joystick_x) + " RY: " + String(ds4.r_joystick_y);
-
-    display.writeText(0, 0, leftStick.c_str());
-    display.writeText(0, 16, rightStick.c_str());
-
-    display.update();
+void PS4Monitor::showStatus() {
+    Serial.println((String)"PS4 left joystick value is x: " + ds4.l_joystick_x + " y: " + ds4.l_joystick_y);
+    Serial.println((String)"PS4 right joystick value is x: " + ds4.r_joystick_x + " y: " + ds4.r_joystick_y);
+    Serial.println((String)"PS4 R1 button is: " + ds4.button_r1);
+    Serial.println((String)"PS4 R2 button is: " + ds4.button_r2);
 }
