@@ -1,20 +1,20 @@
 #ifndef PS4CONTROLLER_H
 #define PS4CONTROLLER_H
 
-#include <PS4Monitor.h>
+#include "DS4_I2C_CONTROL.h"
 
 class PS4Controller {
 public:
-    PS4Controller();
+    PS4Controller(uint8_t address = 0x29);
     void begin();
     void update();
-    int getLX();
-    int getLY();
-    int getRX();
-    int getRY();
+    uint8_t getLX();
+    uint8_t getLY();
+    uint8_t getRX();
+    uint8_t getRY();
 
 private:
-    PS4Monitor _ps4;
+    DS4_I2C_CONTROL _ps4;
 };
 
 #endif
