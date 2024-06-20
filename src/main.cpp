@@ -1,23 +1,11 @@
-#include <Arduino.h>
-#include "Display.h"
-#include "Blink.h"
-#include "Light.h"
+#include "Rover.h"
 
-Display display;
-Blink onboardLED(PC13);
-Light led(PA8);
+Rover rover;
 
 void setup() {
-  Serial.begin(9600);
-
-  display.init();
-  onboardLED.init();
-  led.init();
+    rover.begin();
 }
 
 void loop() {
-   // display.animate();
-    display.showTimeSinceStart();
-    onboardLED.update();
-    led.update();
+    rover.update();
 }
