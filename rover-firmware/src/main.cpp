@@ -30,23 +30,26 @@ ControlPacket rxPacket;
 TelemetryPacket txPacket;
 
 void setup() {
-  Serial.begin(115200);   // USB Debug
+  // Serial.begin(115200);   // USB Debug (Disabled to save FLASH)
   Serial1.begin(57600);  // XBee
 
   drive.begin();
   odo.begin();
 
   if (!heading.begin()) {
-    Serial.println("IMU Init Failed");
+    Serial1.println("IMU Init Failed");
   }
 
   if (!bme.begin(0x76)) {
-    Serial.println("BME280 Init Failed");
+    Serial1.println("BME280 Init Failed");
   }
 
   if (!tof.begin()) {
-    Serial.println("VL53L0X Init Failed");
+    Serial1.println("VL53L0X Init Failed");
+  } else {
+    tof.startRangeContinuous();
   }
+
 }
 
 void loop() {
@@ -66,7 +69,7 @@ void loop() {
   txPacket.roll = heading.getRoll();
   txPacket.encoderL = odo.getLeftTicks();
   txPacket.encoderR = odo.getRightTicks();
-  txPacket.distance = tof.readRangeContinuousMillimeters();
+  txPacket.distance = tof.readRange();
   txPacket.temperature = bme.readTemperature();
   txPacket.pressure = bme.readPressure();
 

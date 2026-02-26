@@ -1,0 +1,242 @@
+[
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\CDC.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\CDC.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\CDC.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\CDC.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial0.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial0.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial0.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial0.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial1.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial1.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial1.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial1.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial2.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial2.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial2.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial2.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial3.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial3.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\HardwareSerial3.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\HardwareSerial3.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\IPAddress.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\IPAddress.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\IPAddress.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\IPAddress.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\PluggableUSB.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\PluggableUSB.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\PluggableUSB.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\PluggableUSB.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Print.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Print.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Print.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Print.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Stream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Stream.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Stream.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Stream.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Tone.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Tone.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\Tone.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\Tone.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\USBCore.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\USBCore.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\USBCore.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\USBCore.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WInterrupts.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WInterrupts.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WInterrupts.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WInterrupts.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WMath.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WMath.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WMath.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WMath.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WString.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WString.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\WString.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\WString.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\abi.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\abi.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\abi.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\abi.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\hooks.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\hooks.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\hooks.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\hooks.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\main.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\main.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\main.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\new.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\new.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\new.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\new.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_analog.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_analog.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_analog.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_analog.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_digital.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_digital.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_digital.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_digital.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -mmcu=atmega32u4 -x assembler-with-cpp -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro -c -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_pulse.S.o C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_pulse.S",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_pulse.S",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_pulse.S.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_pulse.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_pulse.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_pulse.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_pulse.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_shift.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_shift.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino\\wiring_shift.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\FrameworkArduino\\wiring_shift.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\lib029\\Wire\\Wire.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src\\Wire.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src\\Wire.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib029\\Wire\\Wire.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o .pio\\build\\sparkfun_promicro8\\lib029\\Wire\\utility\\twi.c.o -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src\\utility\\twi.c",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src\\utility\\twi.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib029\\Wire\\utility\\twi.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\lib2c9\\SPI\\SPI.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src\\SPI.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "C:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src\\SPI.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib2c9\\SPI\\SPI.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_BusIO_Register.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_GenericDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_GenericDevice.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_GenericDevice.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_GenericDevice.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_I2CDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_I2CDevice.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_I2CDevice.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_I2CDevice.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_SPIDevice.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_SPIDevice.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\\Adafruit_SPIDevice.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib7fe\\Adafruit BusIO\\Adafruit_SPIDevice.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_GFX.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_GFX.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_GFX.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_GFX.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_GrayOLED.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_SPITFT.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_SPITFT.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\Adafruit_SPITFT.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\Adafruit_SPITFT.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-gcc.exe -o \".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\glcdfont.c.o\" -c -std=gnu11 -fno-fat-lto-objects -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\glcdfont.c\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\\glcdfont.c",
+        "output": ".pio\\build\\sparkfun_promicro8\\libd98\\Adafruit GFX Library\\glcdfont.c.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o \".pio\\build\\sparkfun_promicro8\\lib461\\Adafruit SSD1306\\Adafruit_SSD1306.cpp.o\" -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro \".pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\\Adafruit_SSD1306.cpp\"",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": ".pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\\Adafruit_SSD1306.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\lib461\\Adafruit SSD1306\\Adafruit_SSD1306.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\src\\Dashboard.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -Iinclude -Isrc \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro src\\Dashboard.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "src\\Dashboard.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\src\\Dashboard.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\src\\PS4Interface.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -Iinclude -Isrc \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro src\\PS4Interface.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "src\\PS4Interface.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\src\\PS4Interface.cpp.o"
+    },
+    {
+        "command": "C:\\Users\\gkuep\\.platformio\\packages\\toolchain-atmelavr\\bin\\avr-g++.exe -o .pio\\build\\sparkfun_promicro8\\src\\main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -mmcu=atmega32u4 -Os -Wall -ffunction-sections -fdata-sections -flto -DPLATFORMIO=60119 -DARDUINO_AVR_PROMICRO8 -DF_CPU=8000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -DUSB_VID=0x1B4F -DUSB_PID=0x9203 \"-DUSB_PRODUCT=\\\"SparkFun Pro Micro\\\"\" -DUSB_MANUFACTURER=\\\"SparkFun\\\" -Iinclude -Isrc \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit SSD1306\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit GFX Library\" \"-I.pio\\libdeps\\sparkfun_promicro8\\Adafruit BusIO\" -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\SPI\\src -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\libraries\\Wire\\src -IC:\\Users\\gkuep\\Code\\ggRover\\shared -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\cores\\arduino -IC:\\Users\\gkuep\\.platformio\\packages\\framework-arduino-avr\\variants\\sparkfun_promicro src\\main.cpp",
+        "directory": "C:\\Users\\gkuep\\Code\\ggRover\\controller-firmware",
+        "file": "src\\main.cpp",
+        "output": ".pio\\build\\sparkfun_promicro8\\src\\main.cpp.o"
+    }
+]
