@@ -17,7 +17,7 @@
 class DiagnosticView {
  public:
   static constexpr uint8_t kWidth = 128;
-  static constexpr uint8_t kHeight = 64;
+  static constexpr uint8_t kHeight = 32;
   static constexpr uint8_t kI2cAddr = 0x3C;
 
   DiagnosticView();

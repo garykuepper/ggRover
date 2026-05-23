@@ -41,4 +41,7 @@ struct TelemetryPacket {
 
 #pragma pack(pop)
 
+/// ControlPacket.flags bit values.
+#define FAILSAFE_BIT 0x01
+
 #endif  // SHARED_PROTOCOL_H

@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
- * @brief Controller firmware super-loop. Stage 4 build: + 50Hz PS4 poll
- *        and 5Hz USB-serial trace of raw stick state.
+ * @brief Controller firmware super-loop. Stage 5 build: + ControlPacket
+ *        assembly and 5Hz OLED diagnostic render. No XBee TX yet.
  */
 
 #include <Arduino.h>
@@ -14,8 +14,12 @@
 PS4Interface ps4;
 DiagnosticView view;
 
-static constexpr uint32_t kPollPeriodMs = 20;    // 50 Hz
-static constexpr uint32_t kTracePeriodMs = 200;  // 5 Hz
+static constexpr uint32_t kPollPeriodMs = 20;     // 50 Hz
+static constexpr uint32_t kRenderPeriodMs = 200;  // 5 Hz
+
+static ControlPacket g_lastTx = {500, 0, 1, 0, 0};
+static uint32_t g_txCount = 0;
+static uint16_t g_txRateHz = 0;
 
 static void scanI2c() {
   Serial.println(F("I2C scan begin"));
@@ -33,6 +37,14 @@ static void scanI2c() {
   Serial.println(F(" device(s)"));
 }
 
+static void buildControlPacket() {
+  g_lastTx.throttle = ps4.throttle();
+  g_lastTx.steering = ps4.steering();
+  g_lastTx.mode = 1;
+  g_lastTx.flags = ps4.failsafeActive() ? FAILSAFE_BIT : 0;
+  g_lastTx.checksum = 0;
+}
+
 void setup() {
   Serial.begin(115200);
   Serial1.begin(57600);
@@ -47,38 +59,23 @@ void setup() {
   if (!view.begin()) {
     Serial.println(F("OLED init FAILED"));
   } else {
-    view.showBoot("boot stage 4");
+    view.showBoot("boot stage 5");
   }
 }
 
 void loop() {
   const uint32_t now = millis();
   static uint32_t lastPoll = 0;
-  static uint32_t lastTrace = 0;
+  static uint32_t lastRender = 0;
 
   if (now - lastPoll >= kPollPeriodMs) {
     lastPoll = now;
     ps4.poll();
+    buildControlPacket();
   }
 
-  if (now - lastTrace >= kTracePeriodMs) {
-    lastTrace = now;
-    const Gamepad_PS4BT& p = ps4.raw();
-    Serial.print(F("conn="));
-    Serial.print(ps4.connected() ? '1' : '0');
-    Serial.print(F(" st="));
-    Serial.print(ps4.lastStatus(), HEX);
-    Serial.print(F(" LX="));
-    Serial.print(p.l_joystick_x);
-    Serial.print(F(" LY="));
-    Serial.print(p.l_joystick_y);
-    Serial.print(F(" RX="));
-    Serial.print(p.r_joystick_x);
-    Serial.print(F(" RY="));
-    Serial.print(p.r_joystick_y);
-    Serial.print(F(" OK="));
-    Serial.print(ps4.okCount());
-    Serial.print(F(" ERR="));
-    Serial.println(ps4.errCount());
+  if (now - lastRender >= kRenderPeriodMs) {
+    lastRender = now;
+    view.render(ps4, g_lastTx, g_txCount, g_txRateHz, now);
   }
 }
