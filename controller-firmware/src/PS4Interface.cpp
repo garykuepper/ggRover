@@ -22,6 +22,10 @@ PS4Interface::PS4Interface(uint8_t i2cAddr)
 
 void PS4Interface::begin() {
   Wire.begin();
+  // Without this, a stuck SDA line (no pull-ups, missing slave, hung peripheral)
+  // makes endTransmission() block forever and prevents the USB CDC 1200bps
+  // auto-reset path from working — recovery then requires a manual double-tap.
+  Wire.setWireTimeout(3000 /*us*/, true /*reset_with_timeout*/);
 }
 
 bool PS4Interface::poll() {
