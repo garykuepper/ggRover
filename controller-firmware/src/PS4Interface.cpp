@@ -15,10 +15,12 @@ int16_t centeredWithDeadzone(uint8_t raw, uint8_t band) {
 
 PS4Interface::PS4Interface(uint8_t i2cAddr)
     : _pad(i2cAddr),
-      _lastOkMs(0),
+      _lastChangeMs(0),
       _okCount(0),
       _errCount(0),
-      _lastStatus(0xFF) {}
+      _lastStatus(0xFF),
+      _prevAccelX(0),
+      _prevAccelY(0) {}
 
 void PS4Interface::begin() {
   Wire.begin();
@@ -32,7 +34,11 @@ bool PS4Interface::poll() {
   _lastStatus = _pad.get_data();
   if (_lastStatus == PS4_OK) {
     _pad.decode_data();
-    _lastOkMs = millis();
+    if (_pad.accel_x != _prevAccelX || _pad.accel_y != _prevAccelY) {
+      _lastChangeMs = millis();
+      _prevAccelX = _pad.accel_x;
+      _prevAccelY = _pad.accel_y;
+    }
     _okCount++;
     return true;
   }
@@ -42,7 +48,7 @@ bool PS4Interface::poll() {
 
 bool PS4Interface::connected() const {
   if (_lastStatus != PS4_OK) return false;
-  return (millis() - _lastOkMs) <= kStaleMs;
+  return (millis() - _lastChangeMs) <= kStaleMs;
 }
 
 uint16_t PS4Interface::throttle() const {

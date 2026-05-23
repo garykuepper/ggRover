@@ -42,11 +42,19 @@ class PS4Interface {
   uint32_t errCount() const { return _errCount; }
 
  private:
+  // _lastChangeMs is the millis() of the most recent poll that produced a HID
+  // report *different* from the previous one. The Hobbytronics adapter keeps
+  // replaying the last cached report indefinitely after a BT disconnect, so
+  // _lastStatus == PS4_OK alone is not a usable heartbeat — accel-byte change
+  // is. Accel jitters every poll on a live controller (gravity + sensor noise),
+  // so a stale value for >kStaleMs reliably means the link is dead.
   Gamepad_PS4BT _pad;
-  uint32_t _lastOkMs;
+  uint32_t _lastChangeMs;
   uint32_t _okCount;
   uint32_t _errCount;
   uint8_t _lastStatus;
+  uint8_t _prevAccelX;
+  uint8_t _prevAccelY;
 };
 
 #endif  // PS4_INTERFACE_H
