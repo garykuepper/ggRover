@@ -1,7 +1,8 @@
 /**
  * @file main.cpp
- * @brief Controller firmware super-loop. Stage 6 build: + 20Hz XBee TX with
- *        1-second rolling rate reported to the diagnostic view.
+ * @brief Controller firmware: 50Hz PS4 poll, 20Hz XBee TX, 5Hz OLED render.
+ *        Failsafes to centered throttle / zero steering when the controller
+ *        link goes stale (see PS4Interface::connected()).
  */
 
 #include <Arduino.h>
@@ -17,27 +18,11 @@ DiagnosticView view;
 static constexpr uint32_t kPollPeriodMs = 20;     // 50 Hz
 static constexpr uint32_t kTxPeriodMs = 50;       // 20 Hz
 static constexpr uint32_t kRenderPeriodMs = 200;  // 5 Hz
-static constexpr uint32_t kRateWindowMs = 1000;   // 1 s rolling window
+static constexpr uint32_t kRateWindowMs = 1000;
 
 static ControlPacket g_lastTx = {500, 0, 1, 0, 0};
 static uint32_t g_txCount = 0;
 static uint16_t g_txRateHz = 0;
-
-static void scanI2c() {
-  Serial.println(F("I2C scan begin"));
-  uint8_t found = 0;
-  for (uint8_t addr = 0x01; addr < 0x7F; addr++) {
-    Wire.beginTransmission(addr);
-    if (Wire.endTransmission() == 0) {
-      Serial.print(F("  found 0x"));
-      Serial.println(addr, HEX);
-      found++;
-    }
-  }
-  Serial.print(F("I2C scan end: "));
-  Serial.print(found);
-  Serial.println(F(" device(s)"));
-}
 
 static void buildControlPacket() {
   g_lastTx.throttle = ps4.throttle();
@@ -48,20 +33,10 @@ static void buildControlPacket() {
 }
 
 void setup() {
-  Serial.begin(115200);
   Serial1.begin(57600);
-
   ps4.begin();
-
-  uint32_t t0 = millis();
-  while (!Serial && (millis() - t0) < 2000) {}
-
-  scanI2c();
-
-  if (!view.begin()) {
-    Serial.println(F("OLED init FAILED"));
-  } else {
-    view.showBoot("boot stage 6");
+  if (view.begin()) {
+    view.showBoot("v0.1 ready");
   }
 }
 
