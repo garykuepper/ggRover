@@ -7,6 +7,13 @@ A modular, object-oriented C++ monorepo for a dual-hardware rover system using P
 - **Semi-Autonomous Operation**: Support manual control via PS4 Bluetooth gamepad with real-time telemetry feedback (IMU, ToF, Environment).
 - **Extensible Architecture**: Provide a robust C++ foundation for adding autonomous navigation and advanced sensor fusion.
 
+## Documentation
+
+- [docs/hardware.md](docs/hardware.md) — Hardware spec sheet: BOM, ratings, I2C address map, open decisions (ESC, servo model). Authoritative source for *what* the hardware is.
+- [docs/pinouts.md](docs/pinouts.md) — Pin map for both MCUs. Authoritative source for *where* each pin is wired.
+- [docs/roadmap.md](docs/roadmap.md) — Phased task list (Phase 1: hardware validation → Phase 4: autonomy).
+- [CLAUDE.md](CLAUDE.md) — Build commands and code-style rules used by AI tooling and contributors alike.
+
 ## System Architecture
 
 ### 1. Rover (STM32 Blue Pill)
@@ -17,7 +24,7 @@ The core vehicle controller responsible for motor orchestration and sensor data 
 
 ### 2. Remote Controller (Arduino Pro Micro)
 The handheld interface for pilot control and telemetry visualization.
-- **Hardware**: Arduino Pro Micro (3.3V).
+- **Hardware**: SparkFun Pro Micro (ATmega32U4, 16 MHz, 5 V).
 - **Interface**: Hobbytronics USB Host (I2C) for PS4 DualShock 4 support, SSD1306 OLED for feedback.
 - **Communication**: XBee (Serial) for rover link.
 
