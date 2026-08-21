@@ -6,3 +6,10 @@
 .vscode/ipch
 .remember/
 .claude/settings.local.json
+.env
+.env.*
+*.key
+.onshape_client_config
+.venv/
+
+

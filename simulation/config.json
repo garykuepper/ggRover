@@ -1,0 +1,17 @@
+{
+  "documentId": "YOUR_ONSHAPE_DOCUMENT_ID",
+  "outputFormat": "urdf",
+  "assetsDir": "assets",
+  "drawFrames": false,
+  "drawCollisions": false,
+  "overrideMasses": true,
+  "simplifyStl": true,
+  "max_stl_size": 3.0,
+  "jointMaxEffort": 10.0,
+  "jointMaxVelocity": 10.0,
+  "dynamics": {
+    "subframe_front": {
+      "mass": 0.0184
+    }
+  }
+}
